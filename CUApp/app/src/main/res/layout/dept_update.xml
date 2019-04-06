@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:src="@drawable/shuttle_train"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/poster_img"
+        />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/poster_img"
+            android:layout_alignTop="@+id/poster_img"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/poster_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Tonmoy"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="2 hrs"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    <TextView
+        android:id="@+id/update_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Economics"
+        android:textColor="@color/black"
+        android:layout_below="@+id/poster_img"
+        android:layout_alignLeft="@+id/poster_img"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tommorows class is cancelled...shobai khushur thelai nachte nachte hagu kore daw"
+        android:id="@+id/update_status"
+        android:layout_below="@id/update_heading"
+        android:layout_alignLeft="@+id/update_heading"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+</RelativeLayout>
